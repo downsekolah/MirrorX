@@ -28,8 +28,8 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>Bot Menyala Sejak ⌚:</b> {currentTime}\n' \
-            f'<b>Sisa Penyimpanan🗄️:</b> {total}\n' \
+    stats = f'<b>Bot Bangkit Sejak ⌚:</b> {currentTime}\n' \
+            f'<b>Sisa Storage bot🗄️:</b> {total}\n' \
             f'<b>Memory bot terpakai 🗃️:</b> {used}  ' \
             f'<b>Ruang Kosong Bot 🗃️:</b> {free}\n\n' \
             f'📇Pengunaan data bot📇\n<b>Uploaded :</b> {sent}\n' \
@@ -75,7 +75,7 @@ def log(update, context):
 @run_async
 def bot_help(update, context):
     help_string = f'''
-/{BotCommands.HelpCommand}: Tutor botnya
+/{BotCommands.HelpCommand}: Liat command bot ler
 
 /{BotCommands.MirrorCommand} [download_url][magnet_link]: Mulai Mirror bot dengan perintah /kaca (link mega/google drive/zippy/mediafire)
 
